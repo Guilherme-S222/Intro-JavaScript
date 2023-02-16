@@ -10,11 +10,17 @@
     "type": "git",
     "url": "git+https://github.com/Guilherme-S222/Intro-JavaScript.git"
   },
-  "keywords": [],
+  "keywords": [
+    "Revisão JavaScript",
+    "Aula Introdução"
+  ],
   "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Guilherme-S222/Intro-JavaScript/issues"
   },
-  "homepage": "https://github.com/Guilherme-S222/Intro-JavaScript#readme"
+  "homepage": "https://github.com/Guilherme-S222/Intro-JavaScript#readme",
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  }
 }
