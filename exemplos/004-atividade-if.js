@@ -10,3 +10,8 @@ let somaNota = nota1 + nota2;
 let media = somaNota/2;
 
 console.log(media);
+
+    if(media < 5) {
+        console.log('Sua nota foi I);
+    
+    
