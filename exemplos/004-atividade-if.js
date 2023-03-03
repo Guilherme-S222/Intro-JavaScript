@@ -3,5 +3,10 @@
 
 let entrada = require('prompt-sync')();
 
-let nota = entrada("Digite as duas notas ");
+let nota1 = parseFloat(entrada('Digite a 1ª nota '));
+let nota2 = parseFloat(entrada('Digite a 2ª nota '));
 
+let somaNota = nota1 + nota2;
+let media = somaNota/2;
+
+console.log(media);
