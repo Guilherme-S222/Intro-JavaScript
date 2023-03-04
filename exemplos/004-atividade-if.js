@@ -4,8 +4,8 @@
 // Recebe as duas notas do usuário
 let entrada = require('prompt-sync')();
 
-let nota1 = parseFloat(prompt("Digite a primeira nota (de 0 a 10):"));
-let nota2 = parseFloat(prompt("Digite a segunda nota (de 0 a 10):"));
+let nota1 = parseFloat(entrada("Digite a primeira nota (de 0 a 10):"));
+let nota2 = parseFloat(entrada("Digite a segunda nota (de 0 a 10):"));
 
 // Calcula a média
 let media = (nota1 + nota2) / 2;
