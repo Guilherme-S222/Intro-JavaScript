@@ -1,7 +1,9 @@
 let entrada = require('prompt-sync')();
 
 console.log('Exemplo de estrutura de repetição');
+
 let valor = '';
+
 valor = entrada('Digite o valor inicial do contador: ');
 let n1 = parseInt(valor);
 valor = entrada('Digite o valor final do contador: ');

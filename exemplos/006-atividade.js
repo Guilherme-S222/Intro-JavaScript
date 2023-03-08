@@ -6,28 +6,18 @@
 let entrada = require('prompt-sync')();
 
 console.log('Atividade estrutura de repetição');
-let valor = '';
-valor1 = entrada('Digite o valor inicial ');
-let n1 = parseInt(valor);
-valor2 = entrada('Digite o valor final ');
-let n2 = parseInt(valor);
 
-let contador = n1;
+let v1 = parseInt(entrada('Digite o primeiro valor: '));
+let v2 = parseInt(entrada('Digite o segundo valor: '));
 
-console.log('for');
-
-if (valor1 < valor2){
-
-
-
-for (contador = n1; contador <= n2; contador++) {
-    console.log(contador);
+if (v1 < v2) {
+    while (v1 <= v2) {
+        console.log(v1);
+        v1++;
+    }
+} else {
+    while (v2 <= v1) {
+        console.log(v1);
+        v1--;
+    }
 }
-}
-
-console.log('Os valor de entrada foram: ');
-console.log('Valor inicial: ' + contador + '\n' + 'Valor final: ' + n2);
-
-entrada();
-
-
