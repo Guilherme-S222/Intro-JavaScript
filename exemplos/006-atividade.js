@@ -19,5 +19,6 @@ if (v1 < v2) {
     while (v2 <= v1) {
         console.log(v1);
         v1--;
-    }
+    }    
 }
+
