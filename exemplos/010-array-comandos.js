@@ -36,7 +36,10 @@ do {
         console.log('Tarefas Pendentes:');
         console.log('---');
         for (const i in tarefas){
-            console.log();
+            console.log('ID: ' + tarefas[i].id);
+            console.log('TAREFA: ' + tarefas[i].tarefa);
+            console.log("REALIZADA: " + tarefas[i].realizada);
+            console.log('---');
         }
 
     }
