@@ -26,27 +26,28 @@ let opcao = 0; //Este código define uma variável opcao e atribui o valor 0 a e
 
 //O menu apresenta opções para listar as tarefas pendentes ou realizadas, adicionar uma nova tarefa, editar uma tarefa e excluir uma tarefa. Para cada opção do menu, o programa executa uma função que manipula a lista de tarefas de acordo com a opção selecionada.
 do {
-    
+    console.log('-------------------');
     console.log('LISTA DE TAREFAS');
     console.log('1 - Listar tarefas pendentes'); 
     console.log('2 - Listar tarefas realizadas');
     console.log('3 - Adicionar tarefa'); 
-    console.log('4 - Editar tarefa');
+    console.log('4 - Concluir tarefa');
     console.log('5 - Excluir tarefa');
     console.log('0 - Encerrar');
-    opcao = entrada('Selecione uma opção:');
+    console.log('-------------------');
+    opcao = entrada('Selecione uma opção: ');
 
     // LISTAR TAREFAS PENDENTES - A primeira opção do menu (1) lista todas as tarefas pendentes, ou seja, aquelas que não foram concluídas ainda. O programa faz um loop pelo array de tarefas e exibe as informações de cada tarefa pendente.
     if (opcao == 1) {
-        console.log('---');
+        console.log('-------------------');
         console.log('Tarefas Pendentes:');
-        console.log('---');
+        console.log('-------------------');
         for (const i in tarefas){
             if (tarefas[i].realizada == false){
                 console.log('ID: ' + tarefas[i].id);
                 console.log('TAREFA: ' + tarefas[i].tarefa);
                 console.log('REALIZADA: ' + (tarefas[i].realizada ? 'Sim' : 'Não'));
-                console.log('---');
+                console.log('-------------------');
             }
         }
         console.log('Pressione Enter para continuar');
@@ -55,15 +56,15 @@ do {
 
     // LISTAR TAREFAS REALIZADAS - A segunda opção do menu (2) lista todas as tarefas já realizadas. O programa faz um loop pelo array de tarefas e exibe as informações de cada tarefa realizada.
     if (opcao == 2) {
-        console.log('---');
+        console.log('-------------------');
         console.log('Tarefas Realizadas:');
-        console.log('---');
+        console.log('-------------------');
         for (const i in tarefas) {
             if (tarefas[i].realizada == true){
                 console.log('ID: ' + tarefas[i].id);
                 console.log('TAREFA: ' + tarefas[i].tarefa);
                 console.log('REALIZADA: ' + (tarefas[i].realizada ? 'Sim' : 'Não'));
-                console.log('---');
+                console.log('-------------------');
             }
         }
         console.log('Pressione Enter para continuar');
@@ -118,13 +119,13 @@ do {
     // EXCLUIR TAREFA
     // EXCLUIR TAREFA
     if (opcao == 5) {
-        console.log('---');
+        console.log('-------------------');
         console.log('Excluir tarefa:');
-        console.log('---');
+        console.log('-------------------');
         for (const i in tarefas) { 
             console.log('ID: ' + tarefas[i].id);
             console.log('TAREFA: ' + tarefas[i].tarefa);
-            console.log('---');
+            console.log('-------------------');
         }
         let idExcluir;
         do {
