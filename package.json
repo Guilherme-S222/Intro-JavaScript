@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/heapwolf/prompt-sync.git"
+    "url": "git+https://github.com/heapwolf/prompt-sync.git"
   },
   "keywords": [
     "prompt",
@@ -21,14 +21,8 @@
     "history"
   ],
   "contributors": [
-    {
-      "name": "Paolo Fragomeni",
-      "email": "paolo@async.ly"
-    },
-    {
-      "name": "David Mark Clements",
-      "email": "david.clements@nearform.com"
-    }
+    "Paolo Fragomeni <paolo@async.ly>",
+    "David Mark Clements <david.clements@nearform.com>"
   ],
   "license": "MIT",
   "devDependencies": {
@@ -36,5 +30,10 @@
   },
   "dependencies": {
     "strip-ansi": "^5.0.0"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/heapwolf/prompt-sync/issues"
+  },
+  "homepage": "https://github.com/heapwolf/prompt-sync#readme",
+  "author": ""
 }
